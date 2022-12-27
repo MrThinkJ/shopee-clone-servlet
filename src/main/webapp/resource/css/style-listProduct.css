@@ -1,0 +1,271 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.d-flex {
+	display: flex;
+}
+
+body {
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+
+.blur {
+	filter: blur(5px);
+}
+
+header {
+	width: 100%;
+	background-color: #2f353b;
+	color: #fff;
+	align-items: center;
+	transition: .3s;
+}
+
+header .title {
+	padding: 10px 20px;
+	font-size: 20px;
+}
+
+header a {
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.5;
+	padding-left: 20px;
+}
+
+header a:hover {
+	color: #fff;
+	opacity: 0.4;
+}
+
+main {
+	width: 1250px;
+	height: auto;
+	margin: 0 auto;
+	transition: .3s;
+}
+
+main .title {
+	font-size: 40px;
+	font-weight: 500;
+}
+
+main .add {
+	border: none;
+	border-radius: 2px;
+	background-color: #4649FF;
+	color: #fff;
+	padding: 5px 7px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+main .list-students .container {
+	width: 1177px;
+	padding: 0;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-top: 1px solid #B2B2B2;
+	border-left: 1px solid #B2B2B2;
+	border-bottom: 1px solid #B2B2B2;
+}
+
+main .list-students .container .title-row {
+	width: 1177px;
+	background-color: #3C4048;
+	color: #fff;
+}
+
+main .list-students .container .title-row .column {
+	width: 235.4px;
+	padding: 15px 70px 15px 15px;
+	border-right: 1px solid #F5F5F540;
+	font-weight: 500;
+}
+
+main .list-students .container .row {
+	width: 1177px;
+	background-color: #EAEAEA;
+	align-items: center;
+	margin: 0;
+}
+
+main .list-students .container .row .col {
+	/* width: 294.25px; */
+	height: 65px;
+	padding: 0;
+	/* padding: 15px 70px 15px 15px; */
+	/* border-right: 1px solid #B2B2B2; */
+	/* font-weight: 500; */
+}
+
+main .list-students .container .row .col .block {
+	width: 235.4px;
+	height: 65px;
+	padding: 15px 30px 15px 15px;
+	border-right: 1px solid #B2B2B2;
+	font-weight: 500;
+	word-wrap: break-word;
+	white-space: normal;
+	overflow: hidden;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	border-bottom: 1px solid #B2B2B2;
+}
+
+main .list-students .container .row .col .update {
+	border: none;
+	border-radius: 5px;
+	background-color: #4649FF;
+	color: #fff;
+	padding: 5px 7px;
+}
+
+main .list-students .container .row .col .delete {
+	border: none;
+	border-radius: 5px;
+	background-color: #E0144C;
+	color: #fff;
+	padding: 5px 7px;
+	margin-left: 5px;
+}
+
+/* Form */
+.wrapper-form {
+	width: 400px;
+	position: fixed;
+	z-index: 999;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.5s;
+	;
+}
+
+.wrapper-form .head-form {
+	padding: 22px 30px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wrapper-form .head-form .title {
+	max-width: 8.5rem;
+	font-size: 1.25rem;
+	color: #222;
+	flex-shrink: 0;
+}
+
+.wrapper-form .head-form .icon {
+	margin-left: 20px;
+	align-items: center;
+}
+
+.wrapper-form .head-form .icon .first-icon {
+	padding: 10px 12px;
+	color: #ffbf00;
+	font-size: 14px;
+	font-weight: 700;
+	border: 2px solid #ffbf00;
+	border-radius: 2px;
+	line-height: 1.1;
+	position: relative;
+	margin-right: 1rem;
+	background-color: #fefaec;
+}
+
+.wrapper-form .head-form .icon .first-icon::after {
+	position: absolute;
+	content: "";
+	box-sizing: border-box;
+	width: 0.75rem;
+	height: 0.75rem;
+	transform: rotate(45deg) translateX(-50%);
+	border-top: 2px solid #ffbf00;
+	border-right: 2px solid #ffbf00;
+	top: 50%;
+	right: -0.75rem;
+	background-color: #fefaec;
+}
+
+.wrapper-form .main-form {
+	padding: 0 30px 30px;
+	overflow: hidden;
+}
+
+.wrapper-form .main-form {
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+
+.wrapper-form .main-form input {
+	box-sizing: border-box;
+	width: 100%;
+	height: 2.5rem;
+	overflow: hidden;
+	border: 1px solid rgba(0, 0, 0, .14);
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	padding: 12px;
+	outline: none;
+}
+
+.wrapper-form .main-form input:focus {
+	border: 1px solid #000000;
+	box-shadow: 0 0 4px rgb(0 0 0/ 14%);
+}
+
+.wrapper-form .main-form input::placeholder {
+	font-size: 14px;
+	color: #000000;
+	opacity: 0.5;
+}
+
+.wrapper-form .main-form .padding-bottom {
+	margin: 0;
+	padding: 0.25rem 0 0;
+	font-size: .75rem;
+	color: #ff424f;
+	min-height: 1rem;
+}
+
+.wrapper-form .main-form .update-btn {
+	width: 100%;
+	color: #fff;
+	background-color: #ee4d2d;
+	box-shadow: 0 1px 1px rgb(0 0 0/ 9%);
+	height: 2.5rem;
+	min-width: 8.75rem;
+	outline: none;
+	padding: 0 0.625rem;
+	border: 0;
+}
+
+.wrapper-form .main-form .delete-btn {
+	width: 40%;
+	color: #fff;
+	background-color: #ee4d2d;
+	box-shadow: 0 1px 1px rgb(0 0 0/ 9%);
+	height: 2.5rem;
+	min-width: 8.75rem;
+	outline: none;
+	padding: 0 0.625rem;
+	border: 0;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.wrapper-form .main-form .cancel {
+	text-align: center;
+}
